@@ -116,8 +116,6 @@ nav,ul{
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
  .son-div{
@@ -125,6 +123,7 @@ nav,ul{
     border:2px solid #FF900E;
     text-align: center;
     border-radius: 8px;
+    padding: 20px;
  }
 
 
@@ -138,34 +137,96 @@ nav,ul{
  /* <!-- one seep up it's means call  the footer section and top up  --> */
 
  .logo-info{
-
+    display: flex;;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
  }
 
+ .logo-info img {
+    width: 120px;
+ }
+
+ /* footer{
+    text-align: center;
+    color: #FFF4E7;
+    background-color: #FFF4E7;
+    height: 40px;
+    width: 700px;
+    border: 1px solid #FF900E;
+    margin-left: 300px;
+ } */
+
+/* it is a middle pat here itd "class=features" */
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-left: 100px;
+}
+.card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.rendom{
+    border-left: 3px solid  #FF900E;
+   padding-left: 20px;
+}
+.ten-years-batch{
+    color: white;
+    text-align: center;
+    height: 120px;
+    width: 200px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    position: relative;
+    bottom: 100px;
+}
+.enter-title{
+   font-size: 2rem;
+}
+
+.into-set{
+    height: 90%;
+    margin-left: 70px;
+}
 
 
 
 
 
 
-
-
-
-
-
+/* it's for mobile device */
 
  @media screen and (max-width:576px) {
-    .header,nav,.teams-container,.mother-div{ 
+    .header,nav,.teams-container,.mother-div,.logo-info,.features{ 
             flex-direction: column;
     }
+    .into-set{
+        width: 100%;
+        margin-left: 0;
+    }
+
     .teams-img-container{
             grid-template-columns: 1fr;
     }
 }
-@media screen and (min-width:576px) and (max-width:700px) {
-    .header,nav,.teams-container,.mother-div{ 
-        flex-direction: column;
-    }     
 
+/* it's for tablet device */
+
+@media screen and (min-width:576px) and (max-width:700px) {
+    .header,nav,.teams-container,.mother-div,.logo-info,..features{ 
+        flex-direction: column;
+    }   
+      
 }
 
 
